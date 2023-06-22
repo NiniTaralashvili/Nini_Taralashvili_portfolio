@@ -1,0 +1,532 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+
+
+            /* scroll */
+::-webkit-scrollbar {
+    width: 15px;
+    background-color: rgb(100, 52, 179)
+  }
+  
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(186, 156, 235);
+  }
+  
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #ffffff;
+  }
+  
+
+body{
+    background: rgb(186, 156, 235);
+}
+
+
+html {scroll-behavior: smooth;}
+                                        /* header */
+.header {
+    width: 100%;
+    position: fixed;
+    padding: 20px 80px 20px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: rgb(100, 52, 179); 
+    border-bottom:10px solid rgb(186, 156, 235);
+    border-style: double;
+    z-index: 1;
+}
+
+
+@media(max-width:1200px) {
+    .header {
+        width: 90%; 
+    }
+
+    .navigation a {
+        font-size: 10px;
+    }
+
+    .navigation nav {
+        gap: 20px;
+    }
+}
+
+@media(max-width:650px) {
+    .header {
+        width: 90%; 
+
+    }
+    .navigation a {
+        font-size: 5px;
+    }
+
+    .navigation nav {
+        gap: 2px;
+    }
+
+    .logo a { 
+        padding-right:0;  
+        font-size: 20px; 
+    
+    }
+
+    .logo {
+        font-size: 10px;
+    }
+}
+
+
+
+.navigation nav {
+    display: flex;
+    gap: 40px;
+    margin: 0 100px 0 100px;
+
+}
+
+.logo  a{
+    padding-right: 3px;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 900;
+    color: rgb(0, 0, 0);
+    border-radius: 50px;
+    border-right: 5px solid rgb(0, 0, 0);
+    border-bottom: 5px solid rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+    
+}
+
+.navigation a{
+    font-weight: 900;
+    display: inline-flex;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+}
+
+.navigation a:hover{
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 50px;
+    transition: .5s;
+    background: rgb(129, 81, 205); 
+}
+
+                                    /* main content */
+
+.main {
+    border: 10px solid rgb(100, 52, 179); 
+    border-style: double;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgb(186, 156, 235);
+}
+
+.main h1{
+    font-size: 30px;
+    padding-left: 30px;
+    padding-bottom: 15px;
+}
+
+.main h3{
+    padding-bottom: 15px;
+    padding-left: 100px;
+    font-style: italic;
+}
+
+.main p{
+    font-weight: 900;
+}
+
+.photo img {
+    width: 500px;
+    height: 550px;
+    border: 5px solid rgb(100, 52, 179); 
+    border-radius: 50px;
+    border-style:inset;
+ 
+}
+
+.maintext {
+    width: 500px;
+    padding: 30px;
+    background: white;
+    border: 10px solid rgb(100, 52, 179);
+    border-radius: 60px;
+    transition: 1s;
+}
+
+.maintext:hover{
+    font-size: 20px;
+    width: 600px;
+    transition: 1s;
+}
+
+
+                                            /* cv */
+.cv {
+    padding-top: 50px;
+    padding-left: 200px;
+}
+
+.cv a{
+    font-weight: 900;
+    color: black;
+}
+
+
+.cvicon {
+    border-top: 5px solid rgb(100, 52, 179);
+    border-left: 5px solid rgb(100, 52, 179);
+    border-radius: 50px;
+    padding: 10px;
+    color: black;
+    background: white;
+    width: max-content;
+    font-size: 20px;
+    font-weight: 900;
+    transition: .6s;
+
+}
+
+.cvicon:hover{
+    border-top: 12px solid rgb(100, 52, 179);
+    border-left: 12px solid rgb(100, 52, 179);
+    border-bottom: 0 ;
+    border-right: 0 ;
+    background: white;
+    text-decoration:underline;
+
+    transition: .6s;
+}
+
+                                                /* aboutme */
+
+
+.aboutme{
+    margin-top: 90px;
+    font-size: 40px;
+    background: rgb(100, 52, 179);
+    display: flex;
+    justify-content: center;
+}
+
+.aboutme h1{
+    background: rgb(255, 255, 255);
+    padding: 0 5px 0 5px;
+    border-radius: 50px;
+    border: 5px solid rgb(186, 156, 235)
+    
+}
+
+.about-me{
+    padding-top: 50px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid rgb(100, 52, 179); 
+    border-style: double;
+}
+
+.Acceleration{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.Acceleration h1{
+    font-size: 30px;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.about-me video{
+    justify-content: center;
+    width: 800px;
+    height: 800px;
+    border: 7px solid rgb(100, 52, 179);
+    
+}
+
+
+.image-button {
+    background-image: url("photos/certificate.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 200px; /* adjust the width and height as needed */
+    height: 50px;
+    border: none; /* remove the default button border */
+  }
+  
+.certification {
+ background: rgb(186, 156, 235);
+font-size: 50px;
+border-top: 10px solid rgb(100, 52, 179);
+border-left: 10px solid rgb(100, 52, 179);
+border-radius: 50px;
+}
+
+.certification:hover {
+    background: rgb(255, 255, 255);
+    font-size: 50px;
+    border-radius: 50px;
+    }
+    
+
+.certificate{
+    border-right: 10px solid rgb(100, 52, 179);
+    border-bottom: 10px solid rgb(100, 52, 179);
+    border-radius: 50px;
+    background-image: url(photos/certificate.jpg);
+    background-size: cover;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+
+.form {
+    border-bottom: 10px solid rgb(33, 32, 32);
+    border-right: 10px solid rgb(33, 32, 32);;
+    border-radius: 50px;
+    background: rgb(0, 0, 0);
+    width: 400px;
+    justify-content: center;
+    margin: 150px auto;
+}
+
+.form input{
+    margin-bottom: 15px;
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 700;
+    border: 3px solid rgb(100, 52, 179);
+    border-radius: 10px;
+}
+
+.form label{
+    margin-bottom: 15px;
+    justify-content: center;
+    display: flex;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(100, 52, 179);
+}
+
+.form textarea{
+    width: 100%;
+    height: 250px;
+    resize: none;
+    border: 3px solid rgb(100, 52, 179);
+    border-radius: 10px;
+  
+
+}
+
+
+.messeage input {
+    height: 200px;
+
+}
+.submit input{
+    padding: 0 5px 0 5px;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    background: rgb(100, 52, 179);  
+}
+
+.submit input:hover{
+    border-top: 5px solid rgb(255, 255, 255);
+    border-left: 5px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    background: rgb(100, 52, 179)
+}
+
+
+                                    /* footerr */
+                            
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgb(100, 52, 179);
+}
+
+.tel {
+    display: flex;
+}
+
+.footer a,
+.footer p,
+.footer i {
+    font-size: 25px;
+    color: black;
+}
+
+.in i:hover{
+    color: white;
+}
+
+
+
+                                        /* .projects */
+                                
+.projects {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    height: max-content;
+    padding-bottom: 100px;
+    /* background: red; */
+    border: 10px solid rgb(100, 52, 179);
+    border-style: double;
+}
+
+.projects h1 {
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 40px;
+    font-weight: 900;
+    border-top: 5px solid rgb(0, 0, 0);
+    border-left: 5px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    width: max-content;
+    
+}
+
+
+.projects video{
+    width: 500px;
+    height: max-content;
+    padding: 30px;
+    border: 10px solid rgb(100, 52, 179);
+    border-radius: 30px;
+    border-style: double;
+    background: black;
+}
+
+.project1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.project1text{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(100, 52, 179);
+    border-radius: 30px;
+    border-style: double;
+    background: rgb(203, 183, 236);
+    margin-right: 50px ;
+}
+
+.project1text h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+.project1text p{
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.project {
+    display: flex;
+    padding: 30px;
+    justify-content: center;
+
+}
+
+
+.project2text{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid rgb(100, 52, 179);
+    border-radius: 30px;
+    border-style: double;
+    background: rgb(203, 183, 236);
+    margin-bottom: 50px ;
+}
+
+.project2photos img{
+    width: 300px;
+    height: 300px;
+    margin-left: 20px;
+    border: 10px solid rgb(100, 52, 179);
+    border-radius: 20px;
+    border-style: double;
+}
+
+.project2photos{
+    display: flex;
+}
+
+
+.project2{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+                                                /* skill */
+
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly ;
+}
+
+.skills h1{
+    width: 300px;
+    margin-bottom: 30px;
+    padding: 10px;
+    border: 5px solid rgb(100, 52, 179);
+    border-style: double;
+    border-radius: 30px;
+    transition: .5s;
+    
+}
+
+.skills h1:hover{
+    background: black;
+    transition: .5s;
+}
+
+#skills h2{
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    font-family: 900;
+}
+
+#skills {
+    height: max-content;
+    border: 10px solid rgb(100, 52, 179);
+    border-style: double
+}
